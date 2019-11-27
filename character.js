@@ -3,6 +3,16 @@ class Character {
     this.name = name;
     this.hp = hp;
     this.atk = atk;
+    if (!name) {
+      throw new Error("You are missing the Name.");
+    }
+    if (!atk) {
+      throw new Error("You are missing the Attack.");
+    }
+    if (!hp) {
+      throw new Error("You are missing the Hitpoints.");
+    }
+
   }
 
   printStats() {
