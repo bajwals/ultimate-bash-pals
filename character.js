@@ -16,9 +16,9 @@ class Character {
   }
 
   printStats() {
-    console.log(`Stats for ${this.name} are as following:`);
+    console.log("------------");
+    console.log(`${this.name} has ${this.hp} hitpoints.`);
     console.log(`Each attack will do ${this.atk} damage.`);
-    console.log(`${this.name} has ${this.hp} hit points remaining!`);
     console.log("------------");
   }
 
